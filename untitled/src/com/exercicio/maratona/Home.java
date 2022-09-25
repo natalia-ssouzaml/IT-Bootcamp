@@ -1,4 +1,4 @@
-package com.exercicios_poo_java;
+package com.exercicio.maratona;
 
 public class Home {
     public static void main(String[] args) {

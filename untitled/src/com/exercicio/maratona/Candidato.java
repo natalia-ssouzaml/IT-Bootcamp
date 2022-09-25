@@ -1,4 +1,4 @@
-package com.exercicios_poo_java;
+package com.exercicio.maratona;
 
 public class Candidato {
     private String nome;

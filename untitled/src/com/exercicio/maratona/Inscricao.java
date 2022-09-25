@@ -1,4 +1,4 @@
-package com.exercicios_poo_java;
+package com.exercicio.maratona;
 
 import java.util.ArrayList;
 import java.util.List;
