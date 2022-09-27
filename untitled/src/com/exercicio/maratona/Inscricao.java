@@ -122,16 +122,14 @@ public class Inscricao {
 
     public String imprimirCandidatos(Categoria categoria) {
         if (categoria.equals(Categoria.PEQUENO)) {
-            for (int i = 0; i < candidatoListCircuitoPequeno.size(); i++) {
-                System.out.println("Lista de candidatos circuito pequeno: " + candidatoListCircuitoPequeno.get(i).getNome() + " " + candidatoListCircuitoPequeno.get(i).getCodigo());
+          //  usando forEach e lambda
+            candidatoListCircuitoPequeno.forEach(candidato -> System.out.println("Nome: "+ candidato.getNome() + "  Codigo: " + candidato.getCodigo()));
 
-
-            }
         }
         if (categoria.equals(Categoria.MEDIO)) {
+            System.out.println("Lista de candidatos circuito médio: ");
             for (int i = 0; i < candidatoListCircuitoMedio.size(); i++) {
-                System.out.println("Lista de candidatos circuito médio: " + candidatoListCircuitoMedio.get(i).getNome() + " " + candidatoListCircuitoMedio.get(i).getCodigo());
-
+                System.out.println("Nome: " +candidatoListCircuitoMedio.get(i).getNome() + " Codigo: " + candidatoListCircuitoMedio.get(i).getCodigo());
             }
             if (categoria.equals(Categoria.AVANCADO)) {
                 for (int i = 0; i < candidatoListCircuitoAvancado.size(); i++) {
